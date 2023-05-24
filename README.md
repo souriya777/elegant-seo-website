@@ -5,18 +5,12 @@ An elegant website ⛩️, aim to be easy et beautiful, with just the necessary,
 # TODO
 
 - [x] feat: create main pages: homepage, productpage, productlistpage, basketpage, loginpage/registerpage, myaccountpage
-- [ ] refactor: clean default `vite` files
-- [ ] build: add `scss`
-- [ ] build: add `reset css`
-- [ ] feat: design global homepage
-- [ ] design: init font
-- [ ] design: design menu
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] design: init font
-- [ ] perf: split between inline/import js, inline/import css
+- [x] build: add `reset css`, add `scss` & `concurrently` (to build scss independently) libs, generate inline css (we not rely on vite => hard...)
+- [x] refactor: clean default `vite` files
+- [ ] refactor: init font
+- [ ] design(menu): for mobile
+- [ ] design(menu): for desktop
+- [ ] feat(homepage): design global zones
+- [ ] design: design slider
+- [ ] refactor: remove `style.scss`
+- [ ] refactor: remove `*.css.map`?

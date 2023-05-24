@@ -5,10 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:all": "concurrently --kill-others \"pnpm scss:critical\" \"pnpm scss:non-critical\" \"pnpm dev\"",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scss:critical": "sass --watch --style=compressed css/critical.scss:html/partials/css-raw-critical.hbs",
+    "scss:non-critical": "sass --watch --style=compressed css/non-critical.scss:public/css/non-critical.css"
   },
   "devDependencies": {
+    "concurrently": "^8.0.1",
+    "sass": "^1.62.1",
     "vite": "^4.3.2",
     "vite-plugin-handlebars": "^1.6.0"
   }
