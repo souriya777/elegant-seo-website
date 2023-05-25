@@ -42,6 +42,8 @@
   --line-height-title: 1.25;
   --line-height-small: 1;
 
+  --text-length: 50ch;
+
   // FONT-SIZE
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.2,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --step--2: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.78rem);
@@ -64,6 +66,11 @@
   --space-xl: clamp(3rem, calc(3rem + 0vw), 3rem);
   --space-2xl: clamp(4rem, calc(4rem + 0vw), 4rem);
   --space-3xl: clamp(6rem, calc(6rem + 0vw), 6rem);
+
+  // DURATION
+  --duration-medium1: 250ms;
+  --duration-medium2: 300ms;
+  --duration-medium4: 400ms;
 }
 
 body {
@@ -85,16 +92,15 @@ h3 {
   line-height: var(--line-height-title);
 }
 
-// TODO to remove
-header {
-  background-color: #ffc0cb;
+h1,
+h2,
+h3,
+p {
+  max-width: 50ch;
 }
-main {
-  background-color: #888f52;
-}
-nav {
-  background-color: #e8aa98;
-}
-footer {
-  background-color: #bf9b6c;
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
 }
