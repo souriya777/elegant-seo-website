@@ -1,0 +1,19 @@
+// roboto400
+@font-face {
+  font-family: 'roboto400';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/roboto400.woff2") format("woff2"),
+    url("/fonts/roboto400.woff2") format("woff");
+}
+
+// nunito800
+@font-face {
+  font-family: 'nunito800';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/nunito800.woff2") format("woff2"),
+    url("/fonts/nunito800.woff2") format("woff");
+}
