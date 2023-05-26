@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:all": "concurrently --kill-others \"pnpm scss:critical\" \"pnpm scss:non-critical\" \"pnpm dev\"",
+    "dev:all": "concurrently --kill-others \"pnpm scss:critical --watch\" \"pnpm scss:non-critical --watch\" \"pnpm dev\"",
+    "perf": "pnpm scss:critical; pnpm scss:non-critical; pnpm build; pnpm preview",
     "build": "vite build",
     "preview": "vite preview",
-    "scss:critical": "sass --watch --style=compressed css/critical.scss:html/partials/css-raw-critical.hbs",
-    "scss:non-critical": "sass --watch --style=compressed css/non-critical.scss:public/css/non-critical.css"
+    "scss:critical": "sass --style=compressed css/critical.scss:html/partials/css-raw-critical.hbs",
+    "scss:non-critical": "sass --style=compressed css/non-critical.scss:public/css/non-critical.css"
   },
   "devDependencies": {
     "concurrently": "^8.0.1",
