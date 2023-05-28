@@ -1,0 +1,19 @@
+.panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: var(--two-column-width);
+  overflow-y: scroll;
+  background-color: var(--color-on-primary);
+  z-index: 1;
+  transition: transform var(--transition-layer);
+
+  &[data-shown="true"] {
+    transform: translateX(0);
+  }
+}

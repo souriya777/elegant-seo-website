@@ -1,15 +1,18 @@
-body {
-  display: grid;
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
-  gap: var(--grid-gutter);
-  max-width: var(--grid-max-width);
-  // padding-inline: var(--grid-gutter);
-  margin-inline: auto;
+// body {
+//   display: grid;
+//   grid-template-columns: repeat(var(--grid-columns), 1fr);
+//   gap: var(--grid-gutter);
+//   max-width: var(--grid-max-width);
+//   margin-inline: auto;
 
-}
+// }
 
-header,
-main,
-footer {
-  grid-column: 1 / -1;
-}
+// header,
+// main,
+// footer {
+//   grid-column: 1 / -1;
+// }
+
+// .panel {
+//   grid-column: 1 / -1;
+// }

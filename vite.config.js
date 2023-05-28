@@ -1,5 +1,6 @@
 import path, { resolve } from 'path';
 import handlebars from 'vite-plugin-handlebars';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 const outputPluginStats = () => ({
   name: 'output-plugin-stats',
@@ -34,6 +35,7 @@ export default {
     handlebars({
       partialDirectory: resolve(__dirname, 'html/partials'),
     }),
+    svelte(),
     outputPluginStats(),
     requestAnalytics(),
     hotUpdateReport(),
