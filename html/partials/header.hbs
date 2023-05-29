@@ -1,9 +1,13 @@
-<header>
-  <div>
-    <a href="http://">logo</a>
-    <input type="text" placeholder="rechercher..." />
-    <button class="icon">🛒</button>
-    <button class="icon menu-open">🍔</button>
+<header class="header">
+  <div class="main">
+    <button class="button-icon menu-open">
+      {{> svg/icon-menu}}
+    </button>
+    <a href="/">
+      {{> img width=176 height=42 class="logo"}}
+    </a>
+    <button class="button-icon">🛒</button>
   </div>
+  {{> headtop}}
   {{> nav}}
 </header>

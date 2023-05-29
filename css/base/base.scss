@@ -82,7 +82,10 @@
   --grid-columns: 12;
 
   // FIXME
-  --size-icon: 48px;
+  --size-icon: 24px;
+  --size-button-icon: 40px;
+  --margin-button-icon: 4px;
+  --img-height-logo: 30px;
   --margin-icon: 4px;
   --text-length: 42ch;
   --opacity-p-sweet: 0.7;
@@ -146,6 +149,11 @@ ul {
   list-style: none;
   margin: 0;
   padding-inline-start: 0;
+}
+
+svg {
+  height: var(--size-icon);
+  width: var(--size-icon);
 }
 
 html.no--scroll {

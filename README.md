@@ -3,6 +3,8 @@ An elegant website ⛩️, aim to be easy et beautiful, with just the necessary,
 
 DEMO 🔥 : https://elegant-seo-website.vercel.app/
 
+Lighthouse score : 100% ???
+
 # NOTES
 
 - content-first https://gridless.design/for-developers
@@ -26,9 +28,67 @@ DEMO 🔥 : https://elegant-seo-website.vercel.app/
 - [x] feat: can open/close `slide-panel`
 - [x] design(panel): prevent body slide
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
+- [ ] build(architecture): use `vite-plugin-ssr` in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
+-- resolve `vite.config.js.publicDir`
+-- resolve FIXME
+-- alias `@`
+-- remove <div id="app">
+
+- [ ] design(header): tune it
+- [ ] feat(basketicon): use only one <custom-component> for store & to manage reactivity for others component ?
 
 - [ ] design(r&d): extract main components from beautiful websites
 - [ ] design(r&d): sketch all my mobile screen
+- [ ] feat(cookieconsent): can accept/refuse cookie consent
+- [ ] feat(googleavis): can see google avis
+- [ ] perf(lazy): <img loading="lazy" src="">
+- [ ] perf(lazy): <icon>
+- [ ] perf(lazy): <video>
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 
 - [ ] design: init `slider`
 - [ ] refactor: switch from `px` to `rem` ?
@@ -37,7 +97,7 @@ DEMO 🔥 : https://elegant-seo-website.vercel.app/
 - [ ] design(icon): init component
 - [ ] design(panel): tune it
 - [ ] design(menu): for mobile
-- [ ] design(menu): for desktop
+- [ ] design(menu): for desktop (inspired by https://vercel.com)
 - [ ] design(icon): use dynamic icons ?
 - [ ] design(text): use letter spacing ?
 - [x] perf(seo): generate metas ?
@@ -47,7 +107,18 @@ DEMO 🔥 : https://elegant-seo-website.vercel.app/
 - [ ] refactor: remove `*.css.map`?
 - [ ] style: implement snap (`scroll-snap-type: x mandatory`)
 
-#
+# SPECS
+
+## <button-icon>
+
+- icon-size: 24px
+- container-size (button-size): 40px
+- touch-target-size (with margin): 48px
+
+# DEPLOYMENT
+
+- vercel: change default `output directory` to `dist/client`
+- `.env`: rename `.env-to-rename` to `.env`
 
 # TEMP commit message
 

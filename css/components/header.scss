@@ -1,0 +1,17 @@
+.header {
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .headtop {
+    font-size: var(--step--2);
+    text-align: center;
+  }
+
+  .logo {
+    height: var(--img-height-logo);
+    width: auto;
+  }
+}

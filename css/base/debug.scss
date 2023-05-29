@@ -1,17 +1,18 @@
-header {
-  background-color: hotpink;
-}
-main {
-  background-color: lightgrey;
-}
-nav {
-  background-color: aquamarine;
-}
+header,
 footer {
-  background-color: maroon;
+  border: 4px solid #2672FA;
 }
-section {
-  background-color: darkorange;
+
+main {
+  border: 4px solid #C24CD6;
+}
+
+section,
+nav,
+header .main,
+.headtop {
+  border: 4px solid crimson;
+  margin-inline: 4px;
 }
 
 h1 {
@@ -19,13 +20,14 @@ h1 {
 }
 
 h2 {
-  background-color: darkkhaki;
+  background-color: hotpink;
 }
 
 h3 {
-  background-color: dodgerblue;
+  background-color: pink;
 }
 
 p {
-  background-color: cadetblue;
+  background-color: lightgray;
+  border: 1px solid black;
 }
