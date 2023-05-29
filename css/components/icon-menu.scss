@@ -1,0 +1,23 @@
+.icon-menu {
+  $thickness: 4px;
+  $border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .first-line,
+  .middle-line,
+  .last-line {
+    height: $thickness;
+    background-color: var(--color-secondary);
+    border-radius: $border-radius;
+  }
+
+  .middle-line {
+    width: 60%;
+  }
+
+  &.active {
+    background-color: pink;
+  }
+}

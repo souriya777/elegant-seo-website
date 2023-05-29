@@ -3,6 +3,8 @@ An elegant website ⛩️, aim to be easy et beautiful, with just the necessary,
 
 DEMO 🔥 : https://elegant-seo-website.vercel.app/
 
+Lighthouse score : 100% ???
+
 # NOTES
 
 - content-first https://gridless.design/for-developers
@@ -26,9 +28,61 @@ DEMO 🔥 : https://elegant-seo-website.vercel.app/
 - [x] feat: can open/close `slide-panel`
 - [x] design(panel): prevent body slide
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
+- [ ] design(header): tune it
+- [ ] feat(basketicon): use only one <custom-component> for store & to manage reactivity for others component ?
 
 - [ ] design(r&d): extract main components from beautiful websites
 - [ ] design(r&d): sketch all my mobile screen
+- [ ] feat(cookieconsent): can accept/refuse cookie consent
+- [ ] feat(googleavis): can see google avis
+- [ ] perf(lazy): <img loading="lazy" src="">
+- [ ] perf(lazy): <icon>
+- [ ] perf(lazy): <video>
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
+- [ ] 
 
 - [ ] design: init `slider`
 - [ ] refactor: switch from `px` to `rem` ?
@@ -47,7 +101,13 @@ DEMO 🔥 : https://elegant-seo-website.vercel.app/
 - [ ] refactor: remove `*.css.map`?
 - [ ] style: implement snap (`scroll-snap-type: x mandatory`)
 
-#
+# SPECS
+
+## <button-icon>
+
+- icon-size: 24px
+- container-size (button-size): 40px
+- touch-target-size (with margin): 48px
 
 # TEMP commit message
 

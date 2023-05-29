@@ -1,3 +1,9 @@
 button {
   cursor: pointer;
+  
+  &.button-icon {
+    height: var(--size-button-icon);
+    width: var(--size-button-icon);
+    margin: var(--margin-button-icon);
+  }
 }
