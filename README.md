@@ -1,6 +1,8 @@
 # Elegant SEO Website
 An elegant website ⛩️, aim to be easy et beautiful, with just the necessary, and optimize for SEO.
 
+DEMO 🔥 : https://elegant-seo-website.vercel.app/
+
 # NOTES
 
 - content-first https://gridless.design/for-developers
@@ -23,25 +25,27 @@ An elegant website ⛩️, aim to be easy et beautiful, with just the necessary,
 - [x] build: add `svelte` 
 - [x] feat: can open/close `slide-panel`
 - [x] design(panel): prevent body slide
-- [ ] design(panel): tune panel
-- [ ] design: init `slider`
-- [ ] design: sketch all my mobile screen
-- [ ] refactor: switch from `px` to `rem` ?
+- [x] ci: deploy on production //elegant-seo-website.vercel.app
+
 - [ ] design(r&d): extract main components from beautiful websites
+- [ ] design(r&d): sketch all my mobile screen
+
+- [ ] design: init `slider`
+- [ ] refactor: switch from `px` to `rem` ?
 - [ ] design(link): init component
 - [ ] design(button): init component
 - [ ] design(icon): init component
+- [ ] design(panel): tune it
 - [ ] design(menu): for mobile
 - [ ] design(menu): for desktop
 - [ ] design(icon): use dynamic icons ?
 - [ ] design(text): use letter spacing ?
-- [ ] perf(seo): generate metas ?
+- [x] perf(seo): generate metas ?
 - [ ] refactor(text): for max-length use 2 values : 42ch and 60ch?
 - [ ] refactor: remove `svelte/store`?
 - [ ] refactor: remove `style.scss`
 - [ ] refactor: remove `*.css.map`?
 - [ ] style: implement snap (`scroll-snap-type: x mandatory`)
-- [ ] ci: deploy on production
 
 #
 
