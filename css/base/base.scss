@@ -147,3 +147,13 @@ ul {
   margin: 0;
   padding-inline-start: 0;
 }
+
+html.no--scroll {
+  height: 100%;
+  overflow: hidden;
+
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+}

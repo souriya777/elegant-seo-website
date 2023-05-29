@@ -22,7 +22,7 @@ An elegant website ⛩️, aim to be easy et beautiful, with just the necessary,
 - [x] design(grid): init a fluid grid (based on //utopia.fyi)
 - [x] build: add `svelte` 
 - [x] feat: can open/close `slide-panel`
-- [ ] design(panel): prevent body slide
+- [x] design(panel): prevent body slide
 - [ ] design(panel): tune panel
 - [ ] design: init `slider`
 - [ ] design: sketch all my mobile screen
