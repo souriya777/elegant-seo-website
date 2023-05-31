@@ -28,6 +28,13 @@ Lighthouse score : 100% ???
 - [x] feat: can open/close `slide-panel`
 - [x] design(panel): prevent body slide
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
+- [ ] try to integrate this architecture in `prestashop classic-vite theme`
+- [ ] build(architecture): use `vite-plugin-ssr` in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
+-- resolve `vite.config.js.publicDir`
+-- resolve FIXME
+-- alias `@`
+-- remove <div id="app">
+
 - [ ] design(header): tune it
 - [ ] feat(basketicon): use only one <custom-component> for store & to manage reactivity for others component ?
 
@@ -91,7 +98,7 @@ Lighthouse score : 100% ???
 - [ ] design(icon): init component
 - [ ] design(panel): tune it
 - [ ] design(menu): for mobile
-- [ ] design(menu): for desktop
+- [ ] design(menu): for desktop (inspired by https://vercel.com)
 - [ ] design(icon): use dynamic icons ?
 - [ ] design(text): use letter spacing ?
 - [x] perf(seo): generate metas ?
@@ -108,6 +115,11 @@ Lighthouse score : 100% ???
 - icon-size: 24px
 - container-size (button-size): 40px
 - touch-target-size (with margin): 48px
+
+# DEPLOYMENT
+
+- vercel: change default `output directory` to `dist/client`
+- `.env`: rename `.env-to-rename` to `.env`
 
 # TEMP commit message
 
