@@ -28,15 +28,13 @@ Lighthouse score : 100% ???
 - [x] feat: can open/close `slide-panel`
 - [x] design(panel): prevent body slide
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
-- [ ] build(architecture): use `vite-plugin-ssr` in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
--- resolve `vite.config.js.publicDir`
--- resolve FIXME
--- alias `@`
--- remove <div id="app">
-
-- [ ] design(header): tune it
+- [x] build(architecture): find architecture in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
+- [x] design(header): tune it
+- [ ] design(panel): tune it for mobile
+- [ ] design(icon): init component
+- [ ] design(icon): use dynamic icons ?
 - [ ] feat(basketicon): use only one <custom-component> for store & to manage reactivity for others component ?
-
+- [ ] perf(js): use import type `modulepreload` ?
 - [ ] design(r&d): extract main components from beautiful websites
 - [ ] design(r&d): sketch all my mobile screen
 - [ ] feat(cookieconsent): can accept/refuse cookie consent
@@ -44,7 +42,7 @@ Lighthouse score : 100% ???
 - [ ] perf(lazy): <img loading="lazy" src="">
 - [ ] perf(lazy): <icon>
 - [ ] perf(lazy): <video>
-- [ ] 
+- [ ] perf(css): remove generaption of `*.map` files
 - [ ] 
 - [ ] 
 - [ ] 
@@ -94,11 +92,8 @@ Lighthouse score : 100% ???
 - [ ] refactor: switch from `px` to `rem` ?
 - [ ] design(link): init component
 - [ ] design(button): init component
-- [ ] design(icon): init component
-- [ ] design(panel): tune it
 - [ ] design(menu): for mobile
 - [ ] design(menu): for desktop (inspired by https://vercel.com)
-- [ ] design(icon): use dynamic icons ?
 - [ ] design(text): use letter spacing ?
 - [x] perf(seo): generate metas ?
 - [ ] refactor(text): for max-length use 2 values : 42ch and 60ch?

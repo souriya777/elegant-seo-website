@@ -1,0 +1,2 @@
+// do nothing but when use `vite build --emptyOutDir`
+// we preserve `assets/cache` directory, which is vital to prestashop

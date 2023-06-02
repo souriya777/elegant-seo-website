@@ -1,0 +1,12 @@
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}}</title>
+  <style>
+    {{> theme-critical.css}}
+  </style>
+
+  <link rel="preload" href="/css/theme-noncritical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/theme-noncritical.css"></noscript>
+</head>

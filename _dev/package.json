@@ -1,0 +1,29 @@
+{
+  "name": "elegant-seo-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --kill-others 'pnpm build --watch' 'pnpm dev:scss' 'pnpm js:watch' 'vite'",
+    "build": "vite build --emptyOutDir",
+    "build:prestashop": "rm -rf public/css; rm -rf public/js; pnpm build; pnpm scss",
+    "preview": "vite preview",
+    "js:watch": "watch 'cp ../assets/js/theme.js src/html/partials/theme.js.hbs' ../assets/js",
+    "scss": "pnpm scss:theme-critical; pnpm scss:theme-noncritical",
+    "scss:theme-critical": "sass --style=compressed src/css/theme-critical.scss:../assets/css/theme-critical.css",
+    "scss:theme-noncritical": "sass --style=compressed src/css/theme-noncritical.scss:../assets/css/theme-noncritical.css",
+    "dev:scss": "pnpm dev:scss:theme-critical  --watch; pnpm dev:scss:theme-noncritical  --watch",
+    "dev:scss:theme-critical": "sass --style=compressed src/css/theme-critical.scss:src/html/partials/theme-critical.css.hbs",
+    "dev:scss:theme-noncritical": "sass --style=compressed src/css/theme-noncritical.scss:public/css/theme-noncritical.css"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.1",
+    "concurrently": "^8.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "sass": "^1.62.1",
+    "svelte": "^3.59.1",
+    "vite": "^4.3.9",
+    "vite-plugin-handlebars": "^1.6.0",
+    "watch": "^1.0.2"
+  }
+}
