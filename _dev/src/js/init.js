@@ -1,9 +1,11 @@
+"use strict";
+
 import { addEventListener } from '@/js/event';
-import panel from './panel';
+import drawer from '@/js/drawer';
 
 window.addEventListener('load', () => {
   console.log('[souriya 😎]: document ready');
 
-  addEventListener('menu-open', () => panel.open());
-  addEventListener('menu-close', () => panel.close());
+  addEventListener('menu-open', () => drawer.open());
+  addEventListener('menu-close', () => drawer.close());
 });

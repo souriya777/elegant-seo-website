@@ -1,3 +1,5 @@
+"use strict";
+
 export function addEventListener(buttonClass, callback) {
   const BUTTON = document.querySelector(`.${buttonClass}`);
 

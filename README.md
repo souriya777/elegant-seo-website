@@ -25,15 +25,17 @@ Lighthouse score : 100% ???
 - [x] perf(lighthouse): change the build in order to have feedbacks on performances (100% fcp:1.4 lcp:1.4 si:1.4)
 - [x] design(grid): init a fluid grid (based on //utopia.fyi)
 - [x] build: add `svelte` 
-- [x] feat: can open/close `slide-panel`
-- [x] design(panel): prevent body slide
+- [x] feat: can open/close `drawer`
+- [x] design(drawer): prevent body slide
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
 - [x] build(architecture): find architecture in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
 - [x] design(header): tune it
 - [x] perf(page): add specific css/js per page
-- [x] design(panel): inject menu content
-- [ ] design(panel): choose shape & effect
-- [ ] design(panel): open/close panel
+- [x] design(drawer): inject menu content
+- [x] design(drawer): choose shape
+- [ ] refactor(drawer): `drawer.open()` (`init.js`)
+- [ ] design(drawer): open/close button + logo
+- [ ] design(drawer): tune effect
 
 - [ ] design(icon): init component
 - [ ] design(icon): use dynamic icons ?
@@ -104,6 +106,7 @@ Lighthouse score : 100% ???
 - [ ] refactor: remove `svelte/store`?
 - [ ] refactor: remove `style.scss`
 - [ ] refactor: remove `*.css.map`?
+- [ ] (refactor): remove all vars ` --md-ref-palette-neutral*`?
 - [ ] style: implement snap (`scroll-snap-type: x mandatory`)
 
 # SPECS
