@@ -33,7 +33,8 @@ Lighthouse score : 100% ???
 - [x] perf(page): add specific css/js per page
 - [x] design(drawer): inject menu content
 - [x] design(drawer): choose shape
-- [ ] refactor(drawer): `drawer.open()` (`init.js`)
+- [x] refactor(drawer): use `svelte store` & <custom-component>
+- [ ] design(drawer): add `shadow`/`blur` on background
 - [ ] design(drawer): open/close button + logo
 - [ ] design(drawer): tune effect
 

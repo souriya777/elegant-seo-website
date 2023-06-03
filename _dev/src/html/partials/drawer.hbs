@@ -1,11 +1,3 @@
-<div class="drawer" data-shown="false">
-  <div class="header">
-    <button class="menu-close">❌</button>
-    logo
-  </div>
-
-  <div class="content">
-    {{> (lookup . 'content')}}
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sit labore aperiam modi odio doloremque quia ex aliquam, optio recusandae reiciendis, similique nihil laudantium quis qui, placeat sequi ipsum eos.</p>
-  </div>
-</div>
+<my-drawer>
+  {{> (lookup . 'content')}}
+</my-drawer>

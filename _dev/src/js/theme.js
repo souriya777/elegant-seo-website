@@ -1,6 +1,9 @@
 "use strict";
 
-import '@/js/init';
-import '@/js/drawer';
+import '@/js/store';
+import { initSvelteElements } from '@/js/svelte-elements';
+
+// <custom-element>
+initSvelteElements();
 
 console.log('[souriya 😎]: theme.js 🌘🌘🌘🚀🚀🚀💎💎💎');
