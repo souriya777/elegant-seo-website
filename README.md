@@ -31,84 +31,46 @@ Lighthouse score : 100% ???
 - [x] build(architecture): find architecture in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
 - [x] design(header): tune it
 - [x] perf(page): add specific css/js per page
+- [x] refactor: remove `style.scss`
 - [x] design(drawer): inject menu content
 - [x] design(drawer): choose shape
 - [x] refactor(drawer): use `svelte store` & <custom-component>
-- [ ] design(drawer): add `shadow`/`blur` on background
+- [x] design(r&d): extract main components from beautiful websites
+- [x] design(r&d): sketch main mobile screen
+- [x] perf(seo): generate metas ? => yes by `prestashop`
+🟧 HOMEPAGE OK
+🟥 PRODUCTPAGE OK
+🟥 PRODUCTLISTPAGE OK
+🟥 BASKETPAGE OK
+🟥 MYACCOUNTPAGE OK
+🟥 LOGINPAGE OK
+🟥 REGISTERPAGE OK
+- [x] design(drawer): add `shadow` on background
+- [ ] design(drawer): add keyboard interactions
 - [ ] design(drawer): open/close button + logo
 - [ ] design(drawer): tune effect
-
 - [ ] design(icon): init component
-- [ ] design(icon): use dynamic icons ?
-- [ ] feat(basketicon): use only one <custom-component> for store & to manage reactivity for others component ?
-- [ ] perf(js): use import type `modulepreload` ?
-- [ ] design(r&d): extract main components from beautiful websites
-- [ ] design(r&d): sketch all my mobile screen
-- [ ] feat(cookieconsent): can accept/refuse cookie consent
-- [ ] feat(googleavis): can see google avis
-- [ ] perf(lazy): <img loading="lazy" src="">
-- [ ] perf(lazy): <icon>
-- [ ] perf(lazy): <video>
-- [ ] perf(css): remove generaption of `*.map` files
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-- [ ] 
-
-- [ ] design: init `slider`
-- [ ] refactor: switch from `px` to `rem` ?
 - [ ] design(link): init component
 - [ ] design(button): init component
 - [ ] design(menu): for mobile
 - [ ] design(menu): for desktop (inspired by https://vercel.com)
+- [ ] design(icon): use dynamic icons ?
+- [ ] feat(basketicon): <custom-component>
+- [ ] perf(lazy): <img loading="lazy" src="">
+- [ ] perf(lazy): <icon>
+- [ ] perf(lazy): <video>
+- [ ] design: init `slider`
+- [ ] perf(js): use import type `modulepreload` ?
+- [ ] perf(css): remove generation of `*.map` files
 - [ ] design(text): use letter spacing ?
-- [x] perf(seo): generate metas ?
-- [ ] refactor(text): for max-length use 2 values : 42ch and 60ch?
-- [ ] refactor: remove `svelte/store`?
-- [ ] refactor: remove `style.scss`
 - [ ] refactor: remove `*.css.map`?
-- [ ] (refactor): remove all vars ` --md-ref-palette-neutral*`?
+- [ ] refactor: remove all vars ` --md-ref-palette-neutral*`?
 - [ ] style: implement snap (`scroll-snap-type: x mandatory`)
+- [ ] refactor: switch from `px` to `rem` ?
+- [ ] refactor(text): for max-length use 2 values : 42ch and 60ch?
+- [ ] feat(cookieconsent): can accept/refuse cookie consent
+- [ ] feat(googleavis): can see google avis
+- [ ] feat(homepage): adapt to //ts-barnum
 
 # SPECS
 
