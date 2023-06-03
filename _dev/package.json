@@ -7,14 +7,14 @@
     "dev": "concurrently --kill-others 'pnpm build --watch' 'pnpm dev:scss' 'pnpm js:watch' 'vite'",
     "build": "vite build --emptyOutDir",
     "build:prestashop": "rm -rf public/css; rm -rf public/js; pnpm build; pnpm scss",
-    "preview": "vite preview",
     "js:watch": "watch 'cp ../assets/js/theme.js src/html/partials/theme.js.hbs' ../assets/js",
-    "scss": "pnpm scss:theme-critical; pnpm scss:theme-noncritical",
+    "scss": "pnpm scss:theme-critical;pnpm scss:pages",
     "scss:theme-critical": "sass --style=compressed src/css/theme-critical.scss:../assets/css/theme-critical.css",
-    "scss:theme-noncritical": "sass --style=compressed src/css/theme-noncritical.scss:../assets/css/theme-noncritical.css",
-    "dev:scss": "pnpm dev:scss:theme-critical  --watch; pnpm dev:scss:theme-noncritical  --watch",
+    "scss:pages": "sass --style=compressed src/css/pages:../assets/css/",
+    "dev:scss": "concurrently 'pnpm dev:scss:theme-critical  --watch' 'pnpm dev:scss:page:home --watch' 'pnpm dev:scss:page:product --watch'",
     "dev:scss:theme-critical": "sass --style=compressed src/css/theme-critical.scss:src/html/partials/theme-critical.css.hbs",
-    "dev:scss:theme-noncritical": "sass --style=compressed src/css/theme-noncritical.scss:public/css/theme-noncritical.css"
+    "dev:scss:page:home": "sass --style=compressed src/css/pages/home.scss:src/html/partials/home.css.hbs",
+    "dev:scss:page:product": "sass --style=compressed src/css/pages/product.scss:src/html/partials/product.css.hbs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.1",

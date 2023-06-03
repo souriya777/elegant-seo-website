@@ -7,6 +7,12 @@
     {{> theme-critical.css}}
   </style>
 
-  <link rel="preload" href="/css/theme-noncritical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/css/theme-noncritical.css"></noscript>
+  {{#if css}}
+    <style>
+      {{> (lookup . 'css')}}
+    </style>
+  {{/if}}
+
+  {{!-- <link rel="preload" href="/css/{{pagename}}.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="/css/{{pagename}}.css"></noscript> --}}
 </head>

@@ -30,6 +30,7 @@ Lighthouse score : 100% ???
 - [x] ci: deploy on production //elegant-seo-website.vercel.app
 - [x] build(architecture): find architecture in order to have `SEO & performances optimizations`, mixed with `facilities of svelte reactivity`
 - [x] design(header): tune it
+- [x] perf(navigation): add specific css/js per page
 - [ ] design(panel): tune it for mobile
 - [ ] design(icon): init component
 - [ ] design(icon): use dynamic icons ?
