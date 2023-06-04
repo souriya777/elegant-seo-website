@@ -1,6 +1,4 @@
 .icon-menu {
-  $thickness: 4px;
-  $border-radius: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,16 +6,12 @@
   .first-line,
   .middle-line,
   .last-line {
-    height: $thickness;
+    height: var(--thickness-icon);
     background-color: var(--color-secondary);
-    border-radius: $border-radius;
+    border-radius: var(--border-radius-icon);
   }
 
   .middle-line {
     width: 60%;
-  }
-
-  &.active {
-    background-color: pink;
   }
 }

@@ -1,4 +1,5 @@
 .icon {
-  height: var(--size-icon);
-  width: var(--size-icon);
+  height: var(--size-icon-live-area);
+  width: var(--size-icon-live-area);
+  padding: var(--padding-icon-live-area);
 }

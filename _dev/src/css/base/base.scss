@@ -4,6 +4,7 @@
   --color-on-primary: #fff;
   --color-secondary: rgb(0, 0, 0);
   --color-secondary-hover: rgba(0, 0, 0, 0.08);
+  --color-secondary-hover: rgba(0, 0, 0, 0.08);
   --color-secondary-hover-filled: rgba(0, 0, 0, 0.84);
   --color-surface: #fefbff;
   --color-on-surface: #1b1b1f;
@@ -87,23 +88,29 @@
   // SIZE
   --height-logo: 30px;
   --width-drawer: 360px;
-  --size-icon: 24px;
+  --size-icon-live-area: 24px;
   --size-button-icon: 40px;
 
   // MARGIN/PADDING
   --margin-button-icon: 4px;
   --margin-icon: 4px;
+  --padding-icon-live-area: 2px;
 
   // BORDER
   --border-radius-1: 0.3125rem; // 5px
   --border-radius-2: 0.625rem; // 10px
   --border-radius-3: 1.25rem; // 20px
+  --border-radius-icon: 2px;
+
+  // THICKNESS
+  --thickness-icon: 4px;
 
   // OPACITY
   --opacity-scrim: 0.4;
   
   // SHADOW
-  --box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
+  // FIXME useful ???
+  // --box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
 
   // TRANSITION
   --transition-layer: 225ms cubic-bezier(0, 0, 0.2, 1);
@@ -166,8 +173,8 @@ ul {
 }
 
 svg {
-  height: var(--size-icon);
-  width: var(--size-icon);
+  height: var(--size-icon-live-area);
+  width: var(--size-icon-live-area);
 }
 
 html.no--scroll {

@@ -46,16 +46,19 @@ Lighthouse score : 100% ???
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
 - [x] design(drawer): add `shadow` on background
-- [ ] design(drawer): add keyboard interactions
+- [x] design(icon): use dynamic icons ? => no
+- [x] design(icon): add `ripple` effect ? => no
+- [ 🟧 ] design(icon): style `button` & `icon`
+- [ ] design(icon): add keyboard interactions
+- [ ] design(basketicon): create it
+
 - [ ] design(drawer): open/close button + logo
+- [ ] design(drawer): close it when clicked `scrim`
 - [ ] design(drawer): tune effect
-- [ ] design(icon): init component
 - [ ] design(link): init component
 - [ ] design(button): init component
 - [ ] design(menu): for mobile
 - [ ] design(menu): for desktop (inspired by https://vercel.com)
-- [ ] design(icon): use dynamic icons ?
-- [ ] feat(basketicon): <custom-component>
 - [ ] perf(lazy): <img loading="lazy" src="">
 - [ ] perf(lazy): <icon>
 - [ ] perf(lazy): <video>
@@ -73,12 +76,6 @@ Lighthouse score : 100% ???
 - [ ] feat(homepage): adapt to //ts-barnum
 
 # SPECS
-
-## <button-icon>
-
-- icon-size: 24px
-- container-size (button-size): 40px
-- touch-target-size (with margin): 48px
 
 # DEPLOYMENT
 
