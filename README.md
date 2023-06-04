@@ -50,11 +50,11 @@ Lighthouse score : 100% ???
 - [x] design(icon): add `ripple` effect ? => no
 - [x] design(icon): style `button` & `icon`
 - [x] design(icon): add keyboard interactions
+- [x] design(drawer): close it when clicked `scrim`
 - [ ] design(basketicon): create it
-
 - [ ] design(drawer): open/close button + logo
-- [ ] design(drawer): close it when clicked `scrim`
 - [ ] design(drawer): tune effect
+
 - [ ] design(link): init component
 - [ ] design(button): init component
 - [ ] design(menu): for mobile
