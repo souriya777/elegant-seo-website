@@ -1,0 +1,21 @@
+.icon-menu-close {
+  position: relative;
+
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  &:before, &:after {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    content: ' ';
+    height: var(--size-icon-live-area);
+    width: var(--thickness-icon);
+    border-radius: var(--border-radius-icon);
+    background-color: currentColor;
+  }
+}

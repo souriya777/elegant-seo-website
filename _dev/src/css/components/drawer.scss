@@ -7,9 +7,9 @@
   flex-direction: column;
   height: 100%;
   max-width: var(--width-drawer);
-  padding: var(--space-xs);
+  padding-inline: var(--space-xs);
+  padding-block-end: var(--space-xs);
   background-color: var(--color-on-primary);
-  background-color: aquamarine;
   transform: translateX(-100%);
   transition: transform var(--transition-layer);
   overflow-y: scroll;
@@ -17,5 +17,15 @@
 
   &[data-shown="true"] {
     transform: translateX(0);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-block-start: 11px;
+    padding-inline-start: var(--space-l);
   }
 }

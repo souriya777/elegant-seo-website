@@ -38,6 +38,12 @@ Lighthouse score : 100% ???
 - [x] design(r&d): extract main components from beautiful websites
 - [x] design(r&d): sketch main mobile screen
 - [x] perf(seo): generate metas ? => yes by `prestashop`
+- [x] design(drawer): add `shadow` on background
+- [x] design(icon): use dynamic icons ? => no
+- [x] design(icon): add `ripple` effect ? => no
+- [x] design(icon): style `button` & `icon`
+- [x] design(icon): add keyboard interactions
+- [x] design(drawer): close it when clicked `scrim`
 🟧 HOMEPAGE OK
 🟥 PRODUCTPAGE OK
 🟥 PRODUCTLISTPAGE OK
@@ -45,14 +51,8 @@ Lighthouse score : 100% ???
 🟥 MYACCOUNTPAGE OK
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
-- [x] design(drawer): add `shadow` on background
-- [x] design(icon): use dynamic icons ? => no
-- [x] design(icon): add `ripple` effect ? => no
-- [x] design(icon): style `button` & `icon`
-- [x] design(icon): add keyboard interactions
-- [x] design(drawer): close it when clicked `scrim`
+- [x] design(drawer): open/close button + logo
 - [ ] design(basketicon): create it
-- [ ] design(drawer): open/close button + logo
 - [ ] design(drawer): tune effect
 
 - [ ] design(link): init component

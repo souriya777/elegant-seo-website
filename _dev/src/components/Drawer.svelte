@@ -1,6 +1,7 @@
 <script>
   import { scroll, noScroll } from '@/js/souriya-utils';
   import { drawerOpened } from '@/js/store';
+  import IconMenuClose from './IconMenuClose.svelte';
 
   $: if($drawerOpened) {
     noScroll();
@@ -15,8 +16,13 @@
 
 <div class="drawer" data-shown={$drawerOpened}>
   <div class="header">
-    <button class="menu-close" on:click={close}>❌</button>
-    logo
+    <button class="button-icon menu-close" on:click={close}>
+      <IconMenuClose />
+      <span class="tip">fermer</span>
+    </button>
+    <div class="drawer__logo">
+      <slot name="logo"></slot>
+    </div>
   </div>
 
   <div class="content">
