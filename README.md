@@ -44,6 +44,8 @@ Lighthouse score : 100% ???
 - [x] design(icon): style `button` & `icon`
 - [x] design(icon): add keyboard interactions
 - [x] design(drawer): close it when clicked `scrim`
+- [x] design(drawer): open/close button + logo
+- [x] design(drawer): tune effect
 🟧 HOMEPAGE OK
 🟥 PRODUCTPAGE OK
 🟥 PRODUCTLISTPAGE OK
@@ -51,12 +53,11 @@ Lighthouse score : 100% ???
 🟥 MYACCOUNTPAGE OK
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
-- [x] design(drawer): open/close button + logo
+- [x] design(button): init all kind of button + add "back-to-top" functionalities
+- [ ] feat(button): connect to `store`
+- [ ] refactor(old-project): remove project `elegant-seo-design-system`
 - [ ] design(basketicon): create it
-- [ ] design(drawer): tune effect
-
 - [ ] design(link): init component
-- [ ] design(button): init component
 - [ ] design(menu): for mobile
 - [ ] design(menu): for desktop (inspired by https://vercel.com)
 - [ ] perf(lazy): <img loading="lazy" src="">
@@ -73,7 +74,10 @@ Lighthouse score : 100% ???
 - [ ] refactor(text): for max-length use 2 values : 42ch and 60ch?
 - [ ] feat(cookieconsent): can accept/refuse cookie consent
 - [ ] feat(googleavis): can see google avis
+- [ ] feat(basket-drawer): https://www.volandotequila.com.au/volando-blanco-750ml ???
 - [ ] feat(homepage): adapt to //ts-barnum
+- [ ] design(payment): create it 
+- [ ] feat(payment): create it 
 
 # SPECS
 

@@ -9,6 +9,7 @@
   --color-surface: #fefbff;
   --color-on-surface: #1b1b1f;
   --color-neutral: #3b3b3f;
+  --color-neutral2: #77777a;
   --color-on-neutral: #fff;
   --color-black: #000;
   --color-ok: #206c38;
@@ -86,23 +87,31 @@
 
   // SIZE
   --height-logo: 30px;
+  --height-button-simple: 38px;
   --width-drawer: 360px;
   --size-icon-live-area: 24px;
   --size-button-icon: 40px;
+  --size-button-fab: 52px;
 
   // MARGIN/PADDING
   --margin-button-icon: 4px;
   --margin-icon: 4px;
   --padding-icon-live-area: 2px;
 
+  // WORD-SPACING
+  --word-spacing-button-simple: 8px;
+
   // BORDER
-  --border-radius-1: 0.3125rem; // 5px
-  --border-radius-2: 0.625rem; // 10px
-  --border-radius-3: 1.25rem; // 20px
+  --border-radius-rectangle: 4px;
   --border-radius-icon: 2px;
+  // FIXME useful?
+  // --border-radius-1: 0.3125rem; // 5px
+  // --border-radius-2: 0.625rem; // 10px
+  // --border-radius-3: 1.25rem; // 20px
 
   // THICKNESS
   --thickness-icon: 4px;
+  --thickness-button-simple-border: 2px;
 
   // OPACITY
   --opacity-scrim: 0.4;
@@ -176,6 +185,12 @@ svg {
   width: var(--size-icon-live-area);
 }
 
+// UTILITY
+.back-top {
+  visibility: hidden;
+}
+
+// ALL PAGE
 html.no--scroll {
   height: 100%;
   overflow: hidden;
@@ -183,5 +198,11 @@ html.no--scroll {
   body {
     position: relative;
     overflow: hidden;
+  }
+}
+
+body.body--scrolled {
+  .back-top {
+    visibility: visible;
   }
 }
