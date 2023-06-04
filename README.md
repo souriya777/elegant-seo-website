@@ -48,8 +48,8 @@ Lighthouse score : 100% ???
 - [x] design(drawer): add `shadow` on background
 - [x] design(icon): use dynamic icons ? => no
 - [x] design(icon): add `ripple` effect ? => no
-- [ 🟧 ] design(icon): style `button` & `icon`
-- [ ] design(icon): add keyboard interactions
+- [x] design(icon): style `button` & `icon`
+- [x] design(icon): add keyboard interactions
 - [ ] design(basketicon): create it
 
 - [ ] design(drawer): open/close button + logo
