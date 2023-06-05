@@ -75,7 +75,7 @@ button {
     border-color: var(--color-secondary);
   }
 
-  & svg {
+  &.button-simple svg {
     margin-block-start: -4px;
     margin-inline-end: var(--margin-button-icon-svg);
   }

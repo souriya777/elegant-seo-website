@@ -41,8 +41,12 @@ p {
   border: 1px dashed black;
 }
 
-// .icon {
-//   background-color: aquamarine;
+// .icon, .button-icon {
+//   background-color: aquamarine !important;
+
+//   svg {
+//     background-color: yellow;
+//   }
 // }
 
 // button {

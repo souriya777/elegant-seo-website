@@ -48,7 +48,23 @@ Lighthouse score : 100% ???
 - [x] design(drawer): tune effect
 - [x] design(button): init all kind of button + add "back-to-top" functionalities
 - [x] feat(button): connect to `store`
-- [ ] refactor(old-project): remove project `elegant-seo-design-system`
+- [x] perf(lazy): <icon>
+- [x] design(basketicon): create it + connect to store
+- [ ] design(headtop): create it
+- [ ] feat(headtop): slide info
+- [ ] feat(add-to-cart): call FAKE API https://fakestoreapi.com/docs
+- [ ] design(menu): for desktop (inspired by https://vercel.com)
+- [ ] feat(menu): switch betwee mobile/desktop
+- [ ] design(link): init component
+- [ ] perf(lazy): <img loading="lazy" src="">
+- [ ] perf(lazy): <video>
+- [ ] design(footer): init
+- [ ] design(newsletter): init
+- [ ] feat(newsletter): connect to API
+- [ ] design(socialnetwork): init
+- [ ] design(form): create `input`
+- [ ] design(form): create `form` => see REGISTER of https://bohemiantraders.com/
+- [ ] design(slider): init
 🟧 HOMEPAGE OK
 🟥 PRODUCTPAGE OK
 🟥 PRODUCTLISTPAGE OK
@@ -56,14 +72,6 @@ Lighthouse score : 100% ???
 🟥 MYACCOUNTPAGE OK
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
-- [ ] design(basketicon): create it
-- [ ] design(link): init component
-- [ ] design(menu): for mobile
-- [ ] design(menu): for desktop (inspired by https://vercel.com)
-- [ ] perf(lazy): <img loading="lazy" src="">
-- [ ] perf(lazy): <icon>
-- [ ] perf(lazy): <video>
-- [ ] design: init `slider`
 - [ ] perf(js): use import type `modulepreload` ?
 - [ ] perf(css): remove generation of `*.map` files
 - [ ] design(text): use letter spacing ?
@@ -76,6 +84,10 @@ Lighthouse score : 100% ???
 - [ ] feat(googleavis): can see google avis
 - [ ] feat(basket-drawer): https://www.volandotequila.com.au/volando-blanco-750ml ???
 - [ ] feat(homepage): adapt to //ts-barnum
+- [ ] feat(form): add `reCAPTCHA` https://bohemiantraders.com/
+- [ ] refactor(old-project): remove project `elegant-seo-design-system`
+- [ ] feat(checkout): clone https://bohemiantraders.com/ ?
+- [ ] feat(payment): grab payment-types (paypal, Gpay) => see https://bohemiantraders.com/checkout
 - [ ] design(payment): create it 
 - [ ] feat(payment): create it 
 

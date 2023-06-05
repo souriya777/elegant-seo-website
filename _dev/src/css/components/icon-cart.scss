@@ -1,0 +1,12 @@
+.icon-cart {
+  position: relative;
+
+  &__total {
+    font-family: 'nunito800';
+    position: absolute;
+    top: 1px;
+    right: 14px;
+    color: var(--color-primary);
+    font-size: var(--step--1);
+  }
+}

@@ -2,7 +2,13 @@
   <div class="main">
     {{> button-icon-menu}}
     {{> logo}}
-    <button class="button-icon">🛒</button>
+    <button class="button-icon icon-cart">
+      {{> svg/icon-cart}}
+      <span class="tip">Panier</span>
+      <span class="icon-cart__total">
+        <cart-total></cart-total>
+      </span>
+    </button>
   </div>
   {{> headtop}}
 </header>
