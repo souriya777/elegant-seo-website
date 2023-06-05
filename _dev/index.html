@@ -7,10 +7,20 @@
     <main>
       <div style="display: grid;gap: 10px; margin: 10px;">
         <div>
-          <button class="button-simple">Bouton simple</button>
+          <button class="button-simple">
+            <add-to-basket>
+              Bouton simple
+            </add-to-basket>
+          </button>
         </div>
         <div>
           <button class="button-simple secondary">Bouton simple - secondaire</button>
+        </div>
+        <div>
+          <button class="button-simple">
+            {{> svg/icon-arrow-up}}
+            Bouton simple
+          </button>
         </div>
       </div>
       <h1>Ma belle page d'accueil</h1>

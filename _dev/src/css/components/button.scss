@@ -75,6 +75,11 @@ button {
     border-color: var(--color-secondary);
   }
 
+  & svg {
+    margin-block-start: -4px;
+    margin-inline-end: var(--margin-button-icon-svg);
+  }
+
   .tip {
     position: absolute;
     top: 100%;

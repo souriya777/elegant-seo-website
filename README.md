@@ -46,6 +46,9 @@ Lighthouse score : 100% ???
 - [x] design(drawer): close it when clicked `scrim`
 - [x] design(drawer): open/close button + logo
 - [x] design(drawer): tune effect
+- [x] design(button): init all kind of button + add "back-to-top" functionalities
+- [x] feat(button): connect to `store`
+- [ ] refactor(old-project): remove project `elegant-seo-design-system`
 🟧 HOMEPAGE OK
 🟥 PRODUCTPAGE OK
 🟥 PRODUCTLISTPAGE OK
@@ -53,9 +56,6 @@ Lighthouse score : 100% ???
 🟥 MYACCOUNTPAGE OK
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
-- [x] design(button): init all kind of button + add "back-to-top" functionalities
-- [ ] feat(button): connect to `store`
-- [ ] refactor(old-project): remove project `elegant-seo-design-system`
 - [ ] design(basketicon): create it
 - [ ] design(link): init component
 - [ ] design(menu): for mobile
