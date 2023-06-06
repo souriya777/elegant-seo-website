@@ -2,53 +2,58 @@
 <html lang="fr">
   {{> head title="Page d'accueil" css="home.css"}}
   <body>
-    {{> header}}
-
-    <main>
-      <div style="display: grid;gap: 10px; margin: 10px;">
+    <div class="screen">
+      {{> header}}
+  
+      <main>
         <div>
-          <button class="button-simple">
-            <add-to-basket>
+          {{> slider}}
+        </div>
+        <div style="display: grid;gap: 10px; margin: 10px;">
+          <div>
+            <button class="button-simple">
+              <add-to-basket>
+                Bouton simple
+              </add-to-basket>
+            </button>
+          </div>
+          <div>
+            <button class="button-simple secondary">Bouton simple - secondaire</button>
+          </div>
+          <div>
+            <button class="button-simple">
+              {{> svg/icon-arrow-up}}
               Bouton simple
-            </add-to-basket>
-          </button>
+            </button>
+          </div>
         </div>
-        <div>
-          <button class="button-simple secondary">Bouton simple - secondaire</button>
-        </div>
-        <div>
-          <button class="button-simple">
-            {{> svg/icon-arrow-up}}
-            Bouton simple
-          </button>
-        </div>
-      </div>
-      <h1>Ma belle page d'accueil</h1>
-      <section>
-        <h2>Produis des vases en quantité</h2>
-        <h3>Perds avec force et grace :)</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo cum deserunt consequatur placeat tenetur illo porro ab pariatur! Maiores inventore, nulla odio accusantium vel unde modi suscipit officia debitis delectus.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, vero delectus voluptas et vitae numquam, voluptatum placeat officia unde reiciendis quia impedit facere quas nesciunt inventore ut vel minus temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quas placeat suscipit, doloremque fugit autem quasi asperiores nostrum amet libero voluptatibus. Pariatur veniam magni in amet delectus sit, consequatur atque?</p>
-      </section>
-      <section>
-        <h2>Tout va bien ici !</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem in sunt quos, eos quisquam fuga placeat velit laudantium vitae asperiores architecto soluta vel nesciunt repellendus temporibus praesentium quibusdam accusantium sequi.</p>
-      </section>
-      <section>
-        <h2>Encore une fois : tout va bien ici</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam eius, suscipit labore, consequuntur saepe vel eum debitis quasi ullam aspernatur eligendi amet natus dolorum cum laboriosam ratione tenetur libero?</p>
-      </section>
-      <section>
-        <h2>Composants</h2>
-        <h3>Boutons</h3>
-        <button>clique moi</button>
-        <button>vas-y fais-le</button>
-        <h3>Liens</h3>
-        <a href="">un lien quelconque</a>
-        <a href="">le produit de ouf</a>
-      </section>
-    </main>
-
-    {{> footer}}
+        <h1>Ma belle page d'accueil</h1>
+        <section>
+          <h2>Produis des vases en quantité</h2>
+          <h3>Perds avec force et grace :)</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo cum deserunt consequatur placeat tenetur illo porro ab pariatur! Maiores inventore, nulla odio accusantium vel unde modi suscipit officia debitis delectus.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, vero delectus voluptas et vitae numquam, voluptatum placeat officia unde reiciendis quia impedit facere quas nesciunt inventore ut vel minus temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quas placeat suscipit, doloremque fugit autem quasi asperiores nostrum amet libero voluptatibus. Pariatur veniam magni in amet delectus sit, consequatur atque?</p>
+        </section>
+        <section>
+          <h2>Tout va bien ici !</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem in sunt quos, eos quisquam fuga placeat velit laudantium vitae asperiores architecto soluta vel nesciunt repellendus temporibus praesentium quibusdam accusantium sequi.</p>
+        </section>
+        <section>
+          <h2>Encore une fois : tout va bien ici</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam eius, suscipit labore, consequuntur saepe vel eum debitis quasi ullam aspernatur eligendi amet natus dolorum cum laboriosam ratione tenetur libero?</p>
+        </section>
+        <section>
+          <h2>Composants</h2>
+          <h3>Boutons</h3>
+          <button>clique moi</button>
+          <button>vas-y fais-le</button>
+          <h3>Liens</h3>
+          <a href="">un lien quelconque</a>
+          <a href="">le produit de ouf</a>
+        </section>
+      </main>
+  
+      {{> footer}}
+    </div>
   </body>
 </html>

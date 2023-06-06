@@ -33,17 +33,16 @@ function scroll(classname = "no--scroll") {
   HTML_ELEMENT.classList.remove(classname);
 }
 
-function observeBodyScrolled(element, theClass, threshold) {
-  const BODY = document.querySelector('body');
+function observeElementScrolled(elementToObserve, elementToAddClass, theClass, threshold) {
   const OBSERVER = new IntersectionObserver((entries) => {
     if (entries[0].isIntersecting === true) {
-      BODY.classList.remove(theClass);
+      elementToAddClass.classList.remove(theClass);
     } else {
-      BODY.classList.add(theClass);
+      elementToAddClass.classList.add(theClass);
     }
   }, { threshold: [threshold] });
 
-  OBSERVER.observe(element);
+  OBSERVER.observe(elementToObserve);
 }
 
 function decodeHtml(html) {
@@ -52,4 +51,4 @@ function decodeHtml(html) {
   return txt.value;
 }
 
-export { NAME_REGEX, BIRTHDAY_REGEX, debounce, throttle, scroll, noScroll, decodeHtml, observeBodyScrolled };
+export { NAME_REGEX, BIRTHDAY_REGEX, debounce, throttle, scroll, noScroll, decodeHtml, observeElementScrolled };

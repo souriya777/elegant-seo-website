@@ -1,0 +1,9 @@
+.product {
+  &__slider {
+    max-width: var(--width-product-slider);
+
+    .slider__display {
+      height: var(--height-product-slider);
+    }
+  }
+}

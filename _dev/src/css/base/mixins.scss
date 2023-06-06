@@ -1,0 +1,16 @@
+@mixin hide-scrollbar() {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin grab() {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}

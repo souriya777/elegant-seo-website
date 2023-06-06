@@ -3,14 +3,16 @@
 import '@/js/store';
 import { initSvelteElements } from '@/js/svelte-elements';
 import { bindNativeElementToSvelteElement } from '@/js/events';
-import { observeBodyScrolled } from '@/js/souriya-utils';
+import { observeElementScrolled } from '@/js/souriya-utils';
+import '@/js/slider';
 
 // <custom-element>
 initSvelteElements();
 
 // observers
-const H1 = document.querySelector('h1');
-observeBodyScrolled(H1, 'body--scrolled', 0.9);
+const BODY = document.querySelector('body');
+const HEADTOP = document.querySelector('.headtop');
+observeElementScrolled(HEADTOP, BODY, 'body--scrolled', 0.9);
 
 // bind native element event to svelte event
 bindNativeElementToSvelteElement('nativeButtonMenu', 'svelteButtonMenu');

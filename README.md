@@ -50,10 +50,26 @@ Lighthouse score : 100% ???
 - [x] feat(button): connect to `store`
 - [x] perf(lazy): <icon>
 - [x] design(basketicon): create it + connect to store
+- [x] perf(lighthouse): create configuration to test lighthouse score (score: 100%-FCP:1.1-LCP:1.2-CLS:.002-SI:1.1)
+- [x] feat(slider): code my own slider, based on //esqido.com
+-- 🟥🟥🟥 use swiper ????
+-- draw all kind of slider
+-- r&d : responsive limit
+-- fade effect when desktop mode
+-- design headtop slider
+-- design ts-barnum slider
+-- test on all browsers, all mobile
+-- refacto scss hard code
+-- refacto js hard code
+-- mv product slider css to `/pages/product.scss`
+- [ ] design(homepage): add `parallax` effect
 - [ ] design(headtop): create it
 - [ ] feat(headtop): slide info
 - [ ] feat(add-to-cart): call FAKE API https://fakestoreapi.com/docs
-- [ ] design(menu): for desktop (inspired by https://vercel.com)
+- [ ] feat(r&d): test <dialog>
+- [ ] feat(r&d): test `initialLetter css`
+- [ ] feat(r&d): test `container queries`
+ [ ] design(menu): for desktop (inspired by https://vercel.com)
 - [ ] feat(menu): switch betwee mobile/desktop
 - [ ] design(link): init component
 - [ ] perf(lazy): <img loading="lazy" src="">
@@ -64,7 +80,6 @@ Lighthouse score : 100% ???
 - [ ] design(socialnetwork): init
 - [ ] design(form): create `input`
 - [ ] design(form): create `form` => see REGISTER of https://bohemiantraders.com/
-- [ ] design(slider): init
 🟧 HOMEPAGE OK
 🟥 PRODUCTPAGE OK
 🟥 PRODUCTLISTPAGE OK
@@ -72,8 +87,13 @@ Lighthouse score : 100% ???
 🟥 MYACCOUNTPAGE OK
 🟥 LOGINPAGE OK
 🟥 REGISTERPAGE OK
+- [ ] feat(r&d): test `array.at()`
+- [ ] feat(r&d): test `structuredClone()` (spread use shallow copy) (`JSON.parse(JSON.stringify(myobj))`) 
+- [ ] feat(r&d): test `color mix` for progressive gradient color
+- [ ] perf(svg): import file {{> svg/icon-arrow-prev}} ???
 - [ ] perf(js): use import type `modulepreload` ?
 - [ ] perf(css): remove generation of `*.map` files
+- [ ] perf(css): check if `inlined CSS` are too big
 - [ ] design(text): use letter spacing ?
 - [ ] refactor: remove `*.css.map`?
 - [ ] refactor: remove all vars ` --md-ref-palette-neutral*`?

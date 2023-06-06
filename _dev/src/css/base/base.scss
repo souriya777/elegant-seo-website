@@ -1,15 +1,15 @@
 :root {
   // COLOR
-  --color-primary: rgb(255, 192, 203);
+  --color-primary: deeppink;
   --color-on-primary: #fff;
   --color-secondary: rgb(0, 0, 0);
-  --color-secondary-hover: rgba(0, 0, 0, 0.08);
   --color-secondary-hover: rgba(0, 0, 0, 0.08);
   --color-secondary-hover-filled: rgba(0, 0, 0, 0.84);
   --color-surface: #fefbff;
   --color-on-surface: #1b1b1f;
-  --color-neutral: #3b3b3f;
-  --color-neutral2: #77777a;
+  --color-neutral-1: #3b3b3f;
+  --color-neutral-2: #77777a;
+  --color-neutral-3: #c7c6ca;
   --color-on-neutral: #fff;
   --color-black: #000;
   --color-ok: #206c38;
@@ -86,9 +86,13 @@
   --text-length: 50ch;
 
   // SIZE
+  --max-width-screen: 1440px;
   --height-logo: 30px;
   --height-button-simple: 38px;
+  --height-product-slider: 400px;
   --width-drawer: 360px;
+  --width-product-slider: 400px;
+  --width-slider-track-img: 60px;
   --size-icon-live-area: 24px;
   --size-button-icon: 40px;
   --size-button-fab: 52px;
@@ -103,8 +107,8 @@
   --word-spacing-button-simple: 8px;
 
   // BORDER
-  --border-radius-rectangle: 4px;
-  --border-radius-icon: 2px;
+  --border-radius-1: 4px;
+  --border-radius-2: 2px;
   // FIXME useful?
   // --border-radius-1: 0.3125rem; // 5px
   // --border-radius-2: 0.625rem; // 10px
@@ -116,7 +120,7 @@
 
   // OPACITY
   --opacity-scrim: 0.4;
-  
+
   // SHADOW
   // FIXME useful ???
   // --box-shadow: 1px 1px 4px 1px rgb(0 0 0 / 15%);
@@ -188,7 +192,17 @@ svg {
 
 // UTILITY
 .back-top {
+  position: sticky;
+  bottom: 0;
+  margin: var(--space-s);
+  float: right;
   visibility: hidden;
+}
+
+.screen {
+  position: relative;
+  max-width: var(--max-width-screen);
+  margin-inline: auto;
 }
 
 // ALL PAGE

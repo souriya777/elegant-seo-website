@@ -1,14 +1,15 @@
-<footer>my footer</footer>
+<footer>
+  <h2>Footer</h2>
+  {{> drawer content='nav-mobile'}}
+</footer>
 
-{{> drawer content='nav-mobile'}}
-
-<my-scrim></my-scrim>
-
-<span class="back-top">
-  <button class="button-fab floating" onclick="window.scrollTo({top:0, left:0, behavior: 'smooth'})">
+<div class="back-top">
+  <button class="button-fab" onclick="window.scrollTo({top:0, left:0, behavior: 'smooth'})">
     {{> svg/icon-arrow-up}}
   </button>
-</span>
+</div>
+
+<my-scrim></my-scrim>
 
 <script>
   {{> theme.js }}

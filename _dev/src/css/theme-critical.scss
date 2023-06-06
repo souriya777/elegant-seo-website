@@ -1,5 +1,6 @@
 @import './base/modern-reset.scss';
 @import "./base/fonts.scss";
+@import "./base/mixins.scss";
 @import './base/base.scss';
 @import './base/layout.scss'; // FIXME
 @import './base/debug.scss'; // TODO commment
@@ -13,3 +14,7 @@
 @import './components/nav.scss';
 @import './components/drawer.scss';
 @import './components/scrim.scss';
+@import './components/slider.scss';
+
+// FIXME move to `pages/product.scss`
+@import './components/product.scss';

@@ -8,8 +8,12 @@ export function addEventListener(selector, callback) {
     return;
   }
 
-  BUTTON.addEventListener('click', () => { callback(); });
-  BUTTON.addEventListener('keydown', (e) => {
+  addEventListenerOnElement(BUTTON, callback)
+}
+
+export function addEventListenerOnElement(element, callback) {
+  element.addEventListener('click', () => { callback(); });
+  element.addEventListener('keydown', (e) => {
     if (e.code === 'Space' || e.code === 'Enter') {
       callback();
     }

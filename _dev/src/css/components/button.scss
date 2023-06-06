@@ -9,7 +9,7 @@ button {
     align-items: center;
     height: var(--height-button-simple);
     padding: 26px 36px;
-    border-radius: var(--border-radius-rectangle);
+    border-radius: var(--border-radius-1);
     border: var(--thickness-button-simple-border) solid transparent;
     background-color: var(--color-secondary);
     color: var(--color-on-primary);
@@ -30,9 +30,6 @@ button {
   }
 
   &.button-fab {
-    position: fixed;
-    bottom: var(--space-s);
-    right: var(--space-s);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +37,7 @@ button {
     width: var(--size-button-fab);
     border-radius: 50%;
     border: var(--thickness-button-simple-border) solid transparent;
-    background-color: var(--color-neutral);
+    background-color: var(--color-neutral-1);
     color: var(--color-on-neutral);
     z-index: var(--z-index-backbutton);
   }
@@ -48,14 +45,14 @@ button {
   &.secondary {
     background-color: var(--color-surface);
     color: var(--color-on-surface);
-    border-color: var(--color-neutral2);
+    border-color: var(--color-neutral-2);
   }
 
   &:hover,
   &.button-fab:hover {
     background-color: var(--color-surface);
     color: var(--color-on-surface);
-    border-color: var(--color-neutral2);
+    border-color: var(--color-neutral-2);
     transition: all var(--duration-medium1);
     transition-property: background-color, color, border-color;
   }
@@ -85,12 +82,12 @@ button {
     top: 100%;
     left: 50%;
     padding: 4px 8px;
-    border-radius: var(--border-radius-rectangle);
-    background-color: var(--color-neutral);
+    border-radius: var(--border-radius-1);
+    background-color: var(--color-neutral-1);
     color: var(--color-on-primary);
     opacity: 0;
     font-size: 0.8em;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 2;
   }
 }

@@ -2,9 +2,9 @@ lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^2.4.1
-  concurrently: ^8.1.0
+  concurrently: ^8.2.0
   rollup-plugin-copy: ^3.4.0
-  sass: ^1.62.1
+  sass: ^1.63.2
   svelte: ^3.59.1
   svelte-tag: ^1.0.2
   vite: ^4.3.9
@@ -13,19 +13,19 @@ specifiers:
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 2.4.1_svelte@3.59.1+vite@4.3.9
-  concurrently: 8.1.0
+  concurrently: 8.2.0
   rollup-plugin-copy: 3.4.0
-  sass: 1.62.1
+  sass: 1.63.2
   svelte: 3.59.1
   svelte-tag: 1.0.2
-  vite: 4.3.9_sass@1.62.1
-  vite-plugin-handlebars: 1.6.0_sass@1.62.1
+  vite: 4.3.9_sass@1.63.2
+  vite-plugin-handlebars: 1.6.0_sass@1.63.2
   watch: 1.0.2
 
 packages:
 
-  /@babel/runtime/7.22.3:
-    resolution: {integrity: sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==}
+  /@babel/runtime/7.22.5:
+    resolution: {integrity: sha512-ecjvYlnAaZ/KVneE/OdKYBYfgXV3Ptu6zQWmgEF7vwKhQnvVS6bjMD2XYgj+SNvQ1GfK/pjgokfPkC/2CO8CuA==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.11
@@ -274,7 +274,7 @@ packages:
       '@sveltejs/vite-plugin-svelte': 2.4.1_svelte@3.59.1+vite@4.3.9
       debug: 4.3.4
       svelte: 3.59.1
-      vite: 4.3.9_sass@1.62.1
+      vite: 4.3.9_sass@1.63.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -293,7 +293,7 @@ packages:
       magic-string: 0.30.0
       svelte: 3.59.1
       svelte-hmr: 0.15.2_svelte@3.59.1
-      vite: 4.3.9_sass@1.62.1
+      vite: 4.3.9_sass@1.63.2
       vitefu: 0.2.4_vite@4.3.9
     transitivePeerDependencies:
       - supports-color
@@ -419,8 +419,8 @@ packages:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
-  /concurrently/8.1.0:
-    resolution: {integrity: sha512-0AB6eOAtaW/r/kX2lCdolaWtT191ICeuJjEJvI9hT3zbPFuZ/iZaJwMRKwbuwADome7OKxk73L7od+fsveZ7tA==}
+  /concurrently/8.2.0:
+    resolution: {integrity: sha512-nnLMxO2LU492mTUj9qX/az/lESonSZu81UznYDoXtz1IQf996ixVqPAgHXwvHiHCAef/7S8HIK+fTFK7Ifk8YA==}
     engines: {node: ^14.13.0 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -429,7 +429,7 @@ packages:
       lodash: 4.17.21
       rxjs: 7.8.1
       shell-quote: 1.8.1
-      spawn-command: 0.0.2-1
+      spawn-command: 0.0.2
       supports-color: 8.1.1
       tree-kill: 1.2.2
       yargs: 17.7.2
@@ -439,7 +439,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.22.3
+      '@babel/runtime': 7.22.5
     dev: true
 
   /debug/4.3.4:
@@ -1054,8 +1054,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /rollup/3.23.0:
-    resolution: {integrity: sha512-h31UlwEi7FHihLe1zbk+3Q7z1k/84rb9BSwmBSr/XjOCEaBJ2YyedQDuM0t/kfOS0IxM+vk1/zI9XxYj9V+NJQ==}
+  /rollup/3.24.0:
+    resolution: {integrity: sha512-OgraHOIg2YpHQTjl0/ymWfFNBEyPucB7lmhXrQUh38qNOegxLapSPFs9sNr0qKR75awW41D93XafoR2QfhBdUQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1071,11 +1071,11 @@ packages:
   /rxjs/7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
     dependencies:
-      tslib: 2.5.2
+      tslib: 2.5.3
     dev: true
 
-  /sass/1.62.1:
-    resolution: {integrity: sha512-NHpxIzN29MXvWiuswfc1W3I0N8SXBd8UR26WntmDlRYf0bSADnwnOjsyMZ3lMezSlArD33Vs3YFhp7dWvL770A==}
+  /sass/1.63.2:
+    resolution: {integrity: sha512-u56TU0AIFqMtauKl/OJ1AeFsXqRHkgO7nCWmHaDwfxDo9GUMSqBA4NEh6GMuh1CYVM7zuROYtZrHzPc2ixK+ww==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -1103,8 +1103,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /spawn-command/0.0.2-1:
-    resolution: {integrity: sha512-n98l9E2RMSJ9ON1AKisHzz7V42VDiBQGY6PB1BwRglz99wpVsSuGzQ+jOi6lFXBGVTCrRpltvjm+/XA+tpeJrg==}
+  /spawn-command/0.0.2:
+    resolution: {integrity: sha512-zC8zGoGkmc8J9ndvml8Xksr1Amk9qBujgbF0JAIWO7kXr43w0h/0GJNM/Vustixu+YE8N/MTrQ7N31FvHUACxQ==}
     dev: true
 
   /string-width/4.2.3:
@@ -1172,8 +1172,8 @@ packages:
     hasBin: true
     dev: true
 
-  /tslib/2.5.2:
-    resolution: {integrity: sha512-5svOrSA2w3iGFDs1HibEVBGbDrAY82bFQ3HZ3ixB+88nsbsWQoKqDRb5UBYAUPEzbBn6dAp5gRNXglySbx1MlA==}
+  /tslib/2.5.3:
+    resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
     dev: true
 
   /uglify-js/3.17.4:
@@ -1189,18 +1189,18 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
-  /vite-plugin-handlebars/1.6.0_sass@1.62.1:
+  /vite-plugin-handlebars/1.6.0_sass@1.63.2:
     resolution: {integrity: sha512-/TZ2FadScvJW6fmQ+3m3stm6ns+tDZ3VAgzEkSQYQurAnaQ/3MJfidhmTXzD1Hu1iwgkI3lNuEqybzjjKemCTg==}
     dependencies:
       handlebars: 4.7.7
-      vite: 2.9.16_sass@1.62.1
+      vite: 2.9.16_sass@1.63.2
     transitivePeerDependencies:
       - less
       - sass
       - stylus
     dev: true
 
-  /vite/2.9.16_sass@1.62.1:
+  /vite/2.9.16_sass@1.63.2:
     resolution: {integrity: sha512-X+6q8KPyeuBvTQV8AVSnKDvXoBMnTx8zxh54sOwmmuOdxkjMmEJXH2UEchA+vTMps1xw9vL64uwJOWryULg7nA==}
     engines: {node: '>=12.2.0'}
     hasBin: true
@@ -1220,12 +1220,12 @@ packages:
       postcss: 8.4.24
       resolve: 1.22.2
       rollup: 2.77.3
-      sass: 1.62.1
+      sass: 1.63.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.3.9_sass@1.62.1:
+  /vite/4.3.9_sass@1.63.2:
     resolution: {integrity: sha512-qsTNZjO9NoJNW7KnOrgYwczm0WctJ8m/yqYAMAK9Lxt4SoySUfS5S8ia9K7JHpa3KEeMfyF8LoJ3c5NeBJy6pg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -1252,8 +1252,8 @@ packages:
     dependencies:
       esbuild: 0.17.19
       postcss: 8.4.24
-      rollup: 3.23.0
-      sass: 1.62.1
+      rollup: 3.24.0
+      sass: 1.63.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1266,7 +1266,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.3.9_sass@1.62.1
+      vite: 4.3.9_sass@1.63.2
     dev: true
 
   /watch/1.0.2:

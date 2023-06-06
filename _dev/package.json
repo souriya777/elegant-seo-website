@@ -1,12 +1,14 @@
 {
   "name": "elegant-seo-website",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently --kill-others 'pnpm build --watch' 'pnpm dev:scss' 'pnpm js:watch' 'vite'",
     "build": "vite build --emptyOutDir",
     "build:prestashop": "rm -rf public/css; rm -rf public/js; pnpm build; pnpm scss",
+    "build:lighthouse": "vite build --config vite.config.prod.js",
+    "preview:lighthouse": "vite preview --config vite.config.prod.js",
     "js:watch": "watch 'cp ../assets/js/theme.js src/html/partials/theme.js.hbs' ../assets/js",
     "scss": "pnpm scss:theme-critical;pnpm scss:pages",
     "scss:theme-critical": "sass --style=compressed src/css/theme-critical.scss:../assets/css/theme-critical.css",
@@ -18,9 +20,9 @@
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.4.1",
-    "concurrently": "^8.1.0",
+    "concurrently": "^8.2.0",
     "rollup-plugin-copy": "^3.4.0",
-    "sass": "^1.62.1",
+    "sass": "^1.63.2",
     "svelte": "^3.59.1",
     "svelte-tag": "^1.0.2",
     "vite": "^4.3.9",
