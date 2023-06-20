@@ -5,6 +5,7 @@ import { initSvelteElements } from '@/js/svelte-elements';
 import { bindNativeElementToSvelteElement } from '@/js/events';
 import { observeElementScrolled } from '@/js/souriya-utils';
 import '@/js/slider';
+import '@/js/slider-simple';
 
 // <custom-element>
 initSvelteElements();

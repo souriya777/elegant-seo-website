@@ -1,0 +1,42 @@
+.slider-simple {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+
+  p {
+    max-width: unset;
+  }
+
+  &__prev, 
+  &__next {
+    z-index: 1;
+  }
+
+  &__display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+      @include hide-scrollbar;
+      @include grab;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;	
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    ul {
+      display: flex;
+      transition: transform var(--duration-medium5) ease;
+    }
+    
+    li {
+      flex: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      scroll-snap-align: start;
+    }
+  }
+}

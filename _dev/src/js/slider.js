@@ -1,7 +1,8 @@
 "use strict";
 
-import { observeElementScrolled, throttle } from '@/js/souriya-utils';
+import { observeElementScrolled, throttle, debounce } from '@/js/souriya-utils';
 import { addEventListenerOnElement } from '@/js/events';
+import DraggedElement from '@/js/DraggedElement';
 
 (() => {
   window.addEventListener('load', () => {
@@ -20,9 +21,6 @@ import { addEventListenerOnElement } from '@/js/events';
     const SLIDER_TRACK_OFFSET = 180;
     const THRESHOLD_BUTTON = 0.5;
     let currentSlide = 1;
-    let cursorIsDown = false;
-    let startX;
-    let scrollLeft;
 
     //////// FUNCTIONS
     function scrollTrackTo(left) {
@@ -30,35 +28,6 @@ import { addEventListenerOnElement } from '@/js/events';
         left,
         behavior: 'smooth'
       });
-    }
-
-    function dragStart(e) {
-      cursorIsDown = true;
-      startX = e.pageX || e.touches[0].pageX - SLIDER_DISPLAY.offsetLeft;
-      scrollLeft = SLIDER_DISPLAY.scrollLeft;
-    }
-
-    function dragEnd() {
-      cursorIsDown = false;
-    }
-
-    function dragMove(e) {
-      if (!cursorIsDown) return;
-
-      e.preventDefault();
-      const x = e.pageX || e.touches[0].pageX - SLIDER_DISPLAY.offsetLeft;
-
-      const moveTo = () => {
-        const dist = (x - startX);
-
-        if (dist > 0) {
-          prevSlide(currentSlide - 1);
-        } else {
-          nextSlide(currentSlide + 1);
-        }
-      }
-
-      throttle(moveTo);
     }
 
     function resizeImg() {
@@ -104,12 +73,13 @@ import { addEventListenerOnElement } from '@/js/events';
     //////// EVENTS
     if (FIRST_IMAGE) {
       resizeImg();
-      window.addEventListener('resize', resizeImg);
+      window.addEventListener('resize', () => debounce(resizeImg));
     }
 
     addEventListenerOnElement(BUTTON_PREV, () => {
       scrollTrackTo(`-${SLIDER_TRACK_OFFSET}`);
     });
+
     addEventListenerOnElement(BUTTON_NEXT, () => {
       scrollTrackTo(SLIDER_TRACK_OFFSET);
     });
@@ -127,16 +97,16 @@ import { addEventListenerOnElement } from '@/js/events';
       });
     });
 
-    SLIDER_DISPLAY.addEventListener('mousedown', dragStart);
-    SLIDER_DISPLAY.addEventListener('touchstart', dragStart);
-    SLIDER_DISPLAY.addEventListener('mousemove', dragMove);
-    SLIDER_DISPLAY.addEventListener('touchmove', dragMove);
-    SLIDER_DISPLAY.addEventListener('mouseup', dragEnd);
-    SLIDER_DISPLAY.addEventListener('touchend', dragEnd);
-
     //////// OBSERVERS
     observeElementScrolled(SLIDER_TRACK_FIRST, BUTTON_PREV, 'visible', THRESHOLD_BUTTON);
     observeElementScrolled(SLIDER_TRACK_LAST, BUTTON_NEXT, 'visible', THRESHOLD_BUTTON);
+
+    // DRAG on slider
+    new DraggedElement(
+      SLIDER_DISPLAY,
+      () => prevSlide(currentSlide - 1),
+      () => nextSlide(currentSlide + 1)
+    );
 
     console.log('[souriya 😎]: slider.js 🌘🌘🌘🚀🚀🚀💎💎💎');
   });

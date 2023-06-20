@@ -52,19 +52,11 @@ Lighthouse score : 100% ???
 - [x] design(basketicon): create it + connect to store
 - [x] perf(lighthouse): create configuration to test lighthouse score (score: 100%-FCP:1.1-LCP:1.2-CLS:.002-SI:1.1)
 - [x] feat(slider): code my own slider, based on //esqido.com
--- 🟥🟥🟥 use swiper ????
--- draw all kind of slider
--- r&d : responsive limit
--- fade effect when desktop mode
--- design headtop slider
--- design ts-barnum slider
--- test on all browsers, all mobile
--- refacto scss hard code
--- refacto js hard code
--- mv product slider css to `/pages/product.scss`
-- [ ] design(homepage): add `parallax` effect
-- [ ] design(headtop): create it
-- [ ] feat(headtop): slide info
+- [x] design(headtop-slider): make it
+- [ ] design(horizontal-slider): make it
+- [ ] test(slider): on all browsers, all mobiles
+- [ ] refactor(slider): move product slider css to `/pages/product.scss`
+- [ ] feat(css): implement `text-wrap: balance`
 - [ ] feat(add-to-cart): call FAKE API https://fakestoreapi.com/docs
 - [ ] feat(r&d): test <dialog>
 - [ ] feat(r&d): test `initialLetter css`
@@ -110,6 +102,8 @@ Lighthouse score : 100% ???
 - [ ] feat(payment): grab payment-types (paypal, Gpay) => see https://bohemiantraders.com/checkout
 - [ ] design(payment): create it 
 - [ ] feat(payment): create it 
+- [ ] refactor(css): test `:is()`
+- [ ] refactor(css): test `:has()`
 
 # SPECS
 

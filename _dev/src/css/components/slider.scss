@@ -15,9 +15,9 @@
 
     li {
       position: absolute;
-      transform: translateX(100%);
       flex: none;
-      transition: transform 1s ease;
+      transform: translateX(100%);
+      transition: transform var(--duration-medium5) ease;
 
       &:first-child {
         transform: translateX(0);
