@@ -1,0 +1,33 @@
+.slider-list {
+  border: 4px dashed deeppink;
+  // FIXME
+  // margin-inline: 200px;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__display {
+    ul {
+      display: flex;
+      overflow: scroll;
+      // display: grid;
+    }
+
+    li {
+      flex: none;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+
+  &__track {
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

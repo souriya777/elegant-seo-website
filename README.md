@@ -53,11 +53,15 @@ Lighthouse score : 100% ???
 - [x] perf(lighthouse): create configuration to test lighthouse score (score: 100%-FCP:1.1-LCP:1.2-CLS:.002-SI:1.1)
 - [x] feat(slider): code my own slider, based on //esqido.com
 - [x] design(headtop-slider): make it
-- [ ] design(horizontal-slider): make it
+- [ ] design(slider-list): make it
+- [ ] refactor(sliders): rename all
+- [ ] refactor(sliders): make them as "generic" COMPONENT
 - [ ] test(slider): on all browsers, all mobiles
 - [ ] refactor(slider): move product slider css to `/pages/product.scss`
 - [ ] feat(css): implement `text-wrap: balance`
 - [ ] feat(add-to-cart): call FAKE API https://fakestoreapi.com/docs
+- [ ] feat(api): init fake api https://fakestoreapi.com/docs
+
 - [ ] feat(r&d): test <dialog>
 - [ ] feat(r&d): test `initialLetter css`
 - [ ] feat(r&d): test `container queries`
@@ -65,6 +69,7 @@ Lighthouse score : 100% ???
 - [ ] feat(menu): switch betwee mobile/desktop
 - [ ] design(link): init component
 - [ ] perf(lazy): <img loading="lazy" src="">
+- [ ] feat(img): another image on hover
 - [ ] perf(lazy): <video>
 - [ ] design(footer): init
 - [ ] design(newsletter): init
